@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link url="/styles" rel="stylesheet" href="style.css">
+</head>
+<style>
+li:hover{
+    text-decoration: underline;        
+}
+
+li{
+    display:inline;
+    list-style-type:none;
+    margin:5px;
+    font-family: arial,sans-serif;
+}
+ul.top-menu{
+/*    list-style-type:none;
+    background-color: lightgrey;
+    display:block;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+*/
+    overflow:hidden;
+    padding: 0;
+    margin: 0;
+    width:100%;
+
+}
+
+ul.bottom-menu{
+    list-style-type:none;
+    display:block;
+    background-color:lightgrey;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid;
+    border-color:darkgrey;
+    margin-bottom:1px;
+}
+
+li.menu-left{
+    display:block;
+    float:left;
+    padding: 20px 10px;
+}
+
+li.menu-right{
+    display:inline;
+    float:right;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+div#top-nav-bar{
+    width:100%;
+    padding:0;
+    margin:0;
+    background-color: lightgrey;
+}
+
+div#bottom-menu{
+    width:100%;
+    padding:0;
+    margin:0;
+    background-color: lightgrey;
+}
+
+div#logo{
+    height:auto;
+    margin-top:147px;
+    width:100%;
+    display:block;
+    background-color:lightgrey;
+}
+
+img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto%;
+}
+
+
+</style>
+<body>
+
+<div id="top-nav-bar">
+    <ul class=top-menu>
+        <li class=menu-left>About</li>
+        <li class=menu-left>Store</li>
+        <li class=menu-right id=sign-in>Sign in</li>
+        <li class=menu-right>Google Apps</li>
+        <li class=menu-right>Images</li>
+        <li class=menu-right >Gmail</li>
+    </ul>
+</div>
+
+<div id=logo>
+    <img src="./images/google-logo.png" alt="Google Logo">
+</div>
+
+<div>Search Bar</div>
+<div>
+    <ul class=middle-buttons>
+        <li>Google Search Button</li>
+        <li>I'm Feeling Lucky Button</li>
+    </ul>
+</div>
+
+<div>
+    <ul class=bottom-menu>
+        <li class=menu-left>Advertising</li>
+        <li class=menu-left>Business</li>
+        <li class=menu-left>How Search Works</li>
+        <li class=menu-right>Privacy</li>
+        <li class=menu-right>Terms</li>
+        <li class=menu-right>Settings</li>
+    </ul>
+</div>
+
+
+
+
+</body>
+</html>
