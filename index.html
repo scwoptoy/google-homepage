@@ -85,7 +85,7 @@ div#logo{
     margin-top:147px;
     width:100%;
     display:block;
-    background-color:lightgrey;
+
 }
 
 img{
@@ -137,8 +137,8 @@ a:hover{
 */
 
 #search-box{
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top:30px;
+    margin-bottom:30px;
     border-style: solid;
     width:550px;
     border-radius: 50px;
@@ -162,25 +162,30 @@ input:hover{
 .button{
     background-color:#f2f2f2;
     border:none;
-    padding:15px 15px;
+    padding:12px 12px;
     text-align:center;
     text-decoration:none;
     font:13px arial;
     border-radius:4px;
     color:#darkgrey;
-    text-emphasis: strong;
 }
 
-.button:hover{
-    border:1px black;
-}
 
 .btn{
     display:inline;
 }
 
+button:hover{
+    border-color: lightgrey;
+    box-shadow: 0 0 2px rgba(150, 150, 150);
+    outline: 0 none;
+}
 
-
+#button-link:hover{
+    text-decoration:none;
+    color:black;
+    text-emphasis:bold;
+}
 </style>
 <body>
 
@@ -208,8 +213,8 @@ input:hover{
 
 
 <div style="text-align:center">
-    <div class="btn"><button class="button">Google Search</button></div>
-    <div class="btn"><button class="button" style=margin-left:10px>I'm Feeling Lucky</button></div>
+    <div class="btn"><button class="button" ><a href=google.com id="button-link">Google Search</a></button></div>
+    <div class="btn"><button class="button" style=margin-left:10px ><a href=google.com id="button-link">I'm Feeling Lucky</a></button></div>
 </div>
 
 <div>
