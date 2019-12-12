@@ -104,9 +104,45 @@ a:hover{
     text-decoration:underline;
 }
 
+#search{
+    width:100%;
+    height:50px;
+}
+
+.search-bar{
+    display:block;
+    outline-style:solid;
+    text-align:center;
+    width:150px;
+    height:40px;
+}
+
+.button{
+    background-color:#f2f2f2;
+    border:none;
+    padding:15px 15px;
+    text-align:center;
+    text-decoration:none;
+    font:13px arial;
+    border-radius:4px;
+    color:#darkgrey;
+    text-emphasis: strong;
+}
+
+.button:hover{
+    border:1px black;
+}
+
+.btn{
+    display:inline;
+}
+
+
 
 </style>
 <body>
+
+
 
 <div id="top-nav-bar">
     <ul class=top-menu>
@@ -123,12 +159,12 @@ a:hover{
     <img src="./images/google-logo.png" alt="Google Logo">
 </div>
 
-<div>Search Bar</div>
-<div>
-    <ul class=middle-buttons>
-        <li>Google Search Button</li>
-        <li>I'm Feeling Lucky Button</li>
-    </ul>
+<div class="search">
+    <input type="text" placeholder="Search.." id="search-bar">
+</div>
+<div style="text-align:center">
+    <div class="btn"><button class="button">Google Search</button></div>
+    <div class="btn"><button class="button" style=margin-left:10px>I'm Feeling Lucky</button></div>
 </div>
 
 <div>
