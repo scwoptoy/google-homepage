@@ -11,7 +11,7 @@ li:hover{
 li{
     display:inline;
     list-style-type:none;
-    margin:5px;
+    margin:0px;
     font-family: arial,sans-serif;
 }
 ul.top-menu{
@@ -30,6 +30,12 @@ ul.top-menu{
     margin: 0;
     width:100%;
 
+}
+
+div#sign-in{
+    display:block;
+    background-color:royalblue;
+    height: 30px;
 }
 
 ul.bottom-menu{
@@ -89,18 +95,27 @@ img{
     width: auto%;
 }
 
+a{
+    text-decoration:none;
+    color:black;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
 
 </style>
 <body>
 
 <div id="top-nav-bar">
     <ul class=top-menu>
-        <li class=menu-left>About</li>
-        <li class=menu-left>Store</li>
-        <li class=menu-right id=sign-in>Sign in</li>
-        <li class=menu-right>Google Apps</li>
-        <li class=menu-right>Images</li>
-        <li class=menu-right >Gmail</li>
+        <li class=menu-left class=link><a href="google.com">About</a></li>
+        <li class=menu-left class=link><a href="google.com"></a>Store</li>
+        <li class=menu-right class=link><a href="google.com"></a><div id="sign-in">Sign in</div></li>
+        <li class=menu-right class=link><a href="google.com"></a>Google Apps</li>
+        <li class=menu-right class=link><a href="google.com"></a>Images</li>
+        <li class=menu-right><a href="google.com"></a>Gmail</li>
     </ul>
 </div>
 
