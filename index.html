@@ -104,18 +104,60 @@ a:hover{
     text-decoration:underline;
 }
 
-#search{
-    width:100%;
-    height:50px;
+#search-bar{
+    display:block;
+    text-align:center;
+    margin: 0 auto;
 }
 
-.search-bar{
-    display:block;
-    outline-style:solid;
-    text-align:center;
-    width:150px;
-    height:40px;
+#search-box{
+    border-radius=50px;
+    border
+    width:500px;
+    height:50px;
+    border:hidden;
+    
 }
+
+/*#search-bar{
+    margin-top:20px;
+    margin-bottom:20px;
+    border-style: solid;
+    width:550px;
+    border-radius: 50px;
+    border-width:1px;
+    border-color:lightgrey;
+    
+}
+
+#search-bar:focus{
+    box-shadow:lightgrey;
+    border-color:transparent;
+}
+*/
+
+#search-box{
+    margin-top:20px;
+    margin-bottom:20px;
+    border-style: solid;
+    width:550px;
+    border-radius: 50px;
+    border-width:1px;
+    border-color:lightgrey;
+}
+
+input:focus{
+    border-color: transparent;
+    box-shadow: 0 0 2px rgba(150, 150, 150);
+    outline: 0 none;
+}
+
+input:hover{
+    border-color: transparent;
+    box-shadow: 0 0 2px rgba(150, 150, 150);
+    outline: 0 none;
+}
+
 
 .button{
     background-color:#f2f2f2;
@@ -159,9 +201,12 @@ a:hover{
     <img src="./images/google-logo.png" alt="Google Logo">
 </div>
 
+
 <div class="search">
-    <input type="text" placeholder="Search.." id="search-bar">
+    <div id="search-bar"><input id="search-box" type="text"></div>
 </div>
+
+
 <div style="text-align:center">
     <div class="btn"><button class="button">Google Search</button></div>
     <div class="btn"><button class="button" style=margin-left:10px>I'm Feeling Lucky</button></div>
