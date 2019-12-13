@@ -1,206 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link url="/styles" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <style>
-li:hover{
-    text-decoration: underline;        
-}
-
-li{
-    display:inline;
-    list-style-type:none;
-    margin:0px;
-    font-family: arial,sans-serif;
-}
-ul.top-menu{
-/*    list-style-type:none;
-    background-color: lightgrey;
-    display:block;
-    margin: 0;
-    padding: 0;
-    overflow:hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-*/
-    overflow:hidden;
-    padding: 0;
-    margin: 0;
-    width:100%;
-
-}
-
-div#sign-in{
-    display:block;
-    background-color:royalblue;
-    height: 30px;
-}
-
-ul.bottom-menu{
-    list-style-type:none;
-    display:block;
-    background-color:lightgrey;
-    margin: 0;
-    padding: 0;
-    overflow:hidden;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    border: 1px solid;
-    border-color:darkgrey;
-    margin-bottom:1px;
-}
-
-li.menu-left{
-    display:block;
-    float:left;
-    padding: 20px 10px;
-}
-
-li.menu-right{
-    display:inline;
-    float:right;
-    text-align: center;
-    padding: 20px 10px;
-}
-
-div#top-nav-bar{
-    width:100%;
-    padding:0;
-    margin:0;
-    background-color: lightgrey;
-}
-
-div#bottom-menu{
-    width:100%;
-    padding:0;
-    margin:0;
-    background-color: lightgrey;
-}
-
-div#logo{
-    height:auto;
-    margin-top:147px;
-    width:100%;
-    display:block;
-
-}
-
-img{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto%;
-}
-
-a{
-    text-decoration:none;
-    color:black;
-}
-
-a:hover{
-    text-decoration:underline;
-}
-
-#search-bar{
-    display:block;
-    text-align:center;
-    margin: 0 auto;
-}
-
-#search-box{
-    border-radius=50px;
-    border
-    width:500px;
-    height:50px;
-    border:hidden;
-    
-}
-
-/*#search-bar{
-    margin-top:20px;
-    margin-bottom:20px;
-    border-style: solid;
-    width:550px;
-    border-radius: 50px;
-    border-width:1px;
-    border-color:lightgrey;
-    
-}
-
-#search-bar:focus{
-    box-shadow:lightgrey;
-    border-color:transparent;
-}
-*/
-
-#search-box{
-    margin-top:30px;
-    margin-bottom:30px;
-    border-style: solid;
-    width:550px;
-    border-radius: 50px;
-    border-width:1px;
-    border-color:lightgrey;
-}
-
-input:focus{
-    border-color: transparent;
-    box-shadow: 0 0 2px rgba(150, 150, 150);
-    outline: 0 none;
-}
-
-input:hover{
-    border-color: transparent;
-    box-shadow: 0 0 2px rgba(150, 150, 150);
-    outline: 0 none;
-}
-
-
-.button{
-    background-color:#f2f2f2;
-    border:none;
-    padding:12px 12px;
-    text-align:center;
-    text-decoration:none;
-    font:13px arial;
-    border-radius:4px;
-    color:#darkgrey;
-}
-
-
-.btn{
-    display:inline;
-}
-
-button:hover{
-    border-color: lightgrey;
-    box-shadow: 0 0 2px rgba(150, 150, 150);
-    outline: 0 none;
-}
-
-#button-link:hover{
-    text-decoration:none;
-    color:black;
-    text-emphasis:bold;
-}
 </style>
 <body>
 
 
+<div class="top-menu">
+    <div class="menu">
+        <div class="menu-left"><a href="google.com" class="links">About</a></div>
+        <div class="menu-left"><a href="google.com" class="links">Store</a></div>
+    </div>
+    <div class="menu">
+        <div class="menu-right">
+                <a href="google.com" class="top-button">Sign-in</a></div>
+        <div class="menu-right">
+            <a href="google.com">
+                <img src="./images/apps-icon.png" id="apps-icon">
+            </a>
+        </div>
+        <div class="menu-right">
+            <a href="google.com" class="links">Images</a>
+        </div>
+        <div class="menu-right">
+            <a href="google.com" class="links">Gmail</a>
+        </div>
+    </div>
+</div>
 
+
+<!--
 <div id="top-nav-bar">
     <ul class=top-menu>
         <li class=menu-left class=link><a href="google.com">About</a></li>
         <li class=menu-left class=link><a href="google.com"></a>Store</li>
-        <li class=menu-right class=link><a href="google.com"></a><div id="sign-in">Sign in</div></li>
+        <li class=menu-right class=link><a href="google.com"></a>
+            <div id="sign-in">Sign in</div></li>
         <li class=menu-right class=link><a href="google.com"></a>Google Apps</li>
         <li class=menu-right class=link><a href="google.com"></a>Images</li>
         <li class=menu-right><a href="google.com"></a>Gmail</li>
     </ul>
 </div>
+-->
 
 <div id=logo>
     <img src="./images/google-logo.png" alt="Google Logo">
@@ -213,8 +56,14 @@ button:hover{
 
 
 <div style="text-align:center">
-    <div class="btn"><button class="button" ><a href=google.com id="button-link">Google Search</a></button></div>
-    <div class="btn"><button class="button" style=margin-left:10px ><a href=google.com id="button-link">I'm Feeling Lucky</a></button></div>
+    <div class="btn">
+
+            <a href=google.com class="button" id>Google Search</a>
+
+    </div>
+    <div class="btn">
+            <a href=google.com style=margin-left:10px class="button">I'm Feeling Lucky</a>
+    </div>
 </div>
 
 <div>
