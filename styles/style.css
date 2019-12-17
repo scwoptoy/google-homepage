@@ -194,7 +194,7 @@ input:hover{
     background-color:#f2f2f2;
     color:#5F6368;
     border:none;
-    padding:12px 12px;
+    padding:10px 12px;
     text-align:center;
     text-decoration:none;
     font:13px arial;
@@ -215,4 +215,16 @@ input:hover{
     box-shadow: 0 0 2px rgba(150, 150, 150);
     outline: 0 none;
 }
+
+.bottom-bar{
+    height:40px;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    background-color:#f2f2f2;
+    border:1px solid #e4e4e4;
+}
+
+a.button-bar{
+    padding-left:15px;
 }
